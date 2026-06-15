@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'accounts',
     'causes',
+    'donations',
+    'campaigns',
+    'events',
+    'reports',
 ]
 
 MIDDLEWARE = [

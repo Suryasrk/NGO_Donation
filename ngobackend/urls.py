@@ -23,6 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('accounts.urls') ),
     path('api/', include('causes.urls')),
+    path('api/',include('donations.urls')),
+    path('api/',include('campaigns.urls'),
+    path('api/',include('events.urls'))),
+    path('api/',include('reports.urls')),
 ]
 
 if settings.DEBUG:
