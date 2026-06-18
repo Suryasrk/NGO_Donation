@@ -1,0 +1,30 @@
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+    color:white;
+}
+
+.hero-content{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+}
+
+.hero img{
+    width:350px;
+    margin-bottom:20px;
+}
