@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
     'accounts',
@@ -46,6 +46,11 @@ INSTALLED_APPS = [
     'campaigns',
     'events',
     'reports',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 MIDDLEWARE = [
@@ -84,12 +89,14 @@ WSGI_APPLICATION = 'ngobackend.wsgi.application'
 
 DATABASES = {
     'default': {
+
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ngo_db',
         'USER': 'root',
         'PASSWORD': 'Bhavani#519',
         'HOST': 'localhost',
         'PORT': '3306',
+
     }
 }
 
@@ -130,6 +137,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -139,3 +147,4 @@ AUTH_USER_MODEL = 'accounts.User'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 CORS_ALLOW_ALL_ORIGINS = True
+
